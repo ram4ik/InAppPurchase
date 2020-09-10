@@ -13,6 +13,8 @@
 		9535A051250A2CF8003B159A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9535A04F250A2CF8003B159A /* Main.storyboard */; };
 		9535A053250A2CF9003B159A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9535A052250A2CF9003B159A /* Assets.xcassets */; };
 		9535A056250A2CF9003B159A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9535A054250A2CF9003B159A /* LaunchScreen.storyboard */; };
+		9535A05F250A2DEF003B159A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9535A05E250A2DEF003B159A /* StoreKit.framework */; };
+		9535A061250A34F9003B159A /* UpgradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9535A060250A34F9003B159A /* UpgradeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		9535A052250A2CF9003B159A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9535A055250A2CF9003B159A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9535A057250A2CF9003B159A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9535A05E250A2DEF003B159A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		9535A060250A34F9003B159A /* UpgradeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9535A05F250A2DEF003B159A /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,7 @@
 			children = (
 				9535A048250A2CF8003B159A /* InAppPurchase */,
 				9535A047250A2CF8003B159A /* Products */,
+				9535A05D250A2DEF003B159A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +69,17 @@
 				9535A052250A2CF9003B159A /* Assets.xcassets */,
 				9535A054250A2CF9003B159A /* LaunchScreen.storyboard */,
 				9535A057250A2CF9003B159A /* Info.plist */,
+				9535A060250A34F9003B159A /* UpgradeViewController.swift */,
 			);
 			path = InAppPurchase;
+			sourceTree = "<group>";
+		};
+		9535A05D250A2DEF003B159A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9535A05E250A2DEF003B159A /* StoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9535A04E250A2CF8003B159A /* ViewController.swift in Sources */,
+				9535A061250A34F9003B159A /* UpgradeViewController.swift in Sources */,
 				9535A04A250A2CF8003B159A /* AppDelegate.swift in Sources */,
 				9535A04C250A2CF8003B159A /* SceneDelegate.swift in Sources */,
 			);
@@ -216,7 +232,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +287,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -13,6 +13,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func didTapRemoveAds() {
+        
+        guard let vc = storyboard?.instantiateViewController(identifier: "upgrade") else { return }
+        
+        vc.title = "Remove Ads"
+        navigationController?.pushViewController(vc, animated: true)
+        
+        
+    }
+    
 
 
 }
